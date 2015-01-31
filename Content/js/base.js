@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-	var maxTabs = 4;
+	var maxTabs = 3;
 	var duration = 600;
 
 	var openTab = function (index) {
