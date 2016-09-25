@@ -1,27 +1,24 @@
 ﻿@media (max-width: 1000px) {
   .tab-block {
-    background-image: none; }
- }
+    background-image: none; } }
 
 @media (min-width: 1000px) {
   .pre-placeholder {
-    width: 15%; }
- }
+    width: 15%; } }
 
 @media (min-width: 768px) and (max-width: 1000px) {
   .pre-placeholder {
-    width: 14%; }
- }
+    width: 14%; } }
 
 body {
-  background-image: url('../img/background.png');
+  background-image: url("img/background.png");
   color: #9F9F9F;
   background-color: #252525;
   font: 13px Arial;
   background-repeat: repeat-x; }
   body header {
     margin-top: 50px;
-    font-family: 'Open Sans', Arial;
+    font-family: "Open Sans", Arial;
     margin-bottom: 50px; }
     body header h1 {
       font-size: 62px;
@@ -60,11 +57,11 @@ body {
       margin-left: 15px;
       margin-right: 5px; }
       body nav #nav-left a {
-        background: url('../img/arrow-nav-left.png') no-repeat 0 0;
+        background: url("img/arrow-nav-left.png") no-repeat 0 0;
         height: 50px;
         display: block; }
       body nav #nav-left a:hover {
-        background: url('../img/arrow-nav-left.png') no-repeat 0 -50px;
+        background: url("img/arrow-nav-left.png") no-repeat 0 -50px;
         height: 50px;
         display: block; }
     body nav #nav-right {
@@ -76,15 +73,15 @@ body {
       padding: 0px;
       margin-right: 15px; }
       body nav #nav-right a {
-        background: url('../img/arrow-nav-right.png') no-repeat 0 0;
+        background: url("img/arrow-nav-right.png") no-repeat 0 0;
         height: 50px;
         display: block; }
       body nav #nav-right a:hover {
-        background: url('../img/arrow-nav-right.png') no-repeat 0 -50px;
+        background: url("img/arrow-nav-right.png") no-repeat 0 -50px;
         height: 50px;
         display: block; }
     body nav .tab-block {
-      background-image: url('../img/tab_outline.png');
+      background-image: url("img/tab_outline.png");
       padding-right: 1px;
       padding-left: 1px;
       margin-right: 10px;
@@ -92,7 +89,7 @@ body {
       body nav .tab-block:last-child {
         margin-right: 0px; }
       body nav .tab-block a {
-        font-family: 'Open Sans', Arial;
+        font-family: "Open Sans", Arial;
         height: 50px;
         display: block;
         margin: 0 5px;
@@ -102,25 +99,25 @@ body {
         padding-top: 10px;
         text-decoration: none; }
       body nav .tab-block.blue a {
-        background: url('../img/blue_cover.png') no-repeat 0 -67px; }
+        background: url("img/blue_cover.png") no-repeat 0 -67px; }
         body nav .tab-block.blue a:hover {
-          background: url('../img/blue_cover.png') no-repeat 0 -497px; }
+          background: url("img/blue_cover.png") no-repeat 0 -497px; }
       body nav .tab-block.lime a {
-        background: url('../img/lime_cover.png') no-repeat 0 -108px; }
+        background: url("img/lime_cover.png") no-repeat 0 -108px; }
         body nav .tab-block.lime a:hover {
-          background: url('../img/lime_cover.png') no-repeat 0 -538px; }
+          background: url("img/lime_cover.png") no-repeat 0 -538px; }
       body nav .tab-block.green a {
-        background: url('../img/green_cover.png') no-repeat 0 -56px; }
+        background: url("img/green_cover.png") no-repeat 0 -56px; }
         body nav .tab-block.green a:hover {
-          background: url('../img/green_cover.png') no-repeat 0 -486px; }
+          background: url("img/green_cover.png") no-repeat 0 -486px; }
       body nav .tab-block.red a {
-        background: url('../img/red_cover.png') no-repeat 0 -24px; }
+        background: url("img/red_cover.png") no-repeat 0 -24px; }
         body nav .tab-block.red a:hover {
-          background: url('../img/red_cover.png') no-repeat 0 -454px; }
+          background: url("img/red_cover.png") no-repeat 0 -454px; }
       body nav .tab-block.yellow a {
-        background: url('../img/yellow_cover.png') no-repeat 0 -56px; }
+        background: url("img/yellow_cover.png") no-repeat 0 -56px; }
         body nav .tab-block.yellow a:hover {
-          background: url('../img/yellow_cover.png') no-repeat 0 -486px; }
+          background: url("img/yellow_cover.png") no-repeat 0 -486px; }
   body .tab-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -163,7 +160,7 @@ body {
           margin-left: 3px;
           background-repeat: no-repeat;
           background-position: 0px -16px;
-          background-image: url('../img/skill_icon.png'); }
+          background-image: url("img/skill_icon.png"); }
           body .tab-content h5.yellow span.stars span.inactive {
             background-position: 0px 0px; }
     body .tab-content h4.green a {
@@ -196,11 +193,11 @@ body {
       clear: both; }
     body .tab-content .tab-footer {
       height: 50px;
-      background: url('../img/tab_footer.png') 0 0 repeat-x;
+      background: url("img/tab_footer.png") 0 0 repeat-x;
       clear: both; }
   body footer {
     border-top: solid 1px #1A1A1A;
-    background: url('../img/footer.png') top center no-repeat; }
+    background: url("img/footer.png") top center no-repeat; }
     body footer hr {
       height: 1px;
       margin: 0px;
@@ -229,4 +226,3 @@ body {
       body footer .social ul a:hover {
         color: white; }
 
-/*# sourceMappingURL=../../../../../../../Program Files (x86)/Microsoft Visual Studio 12.0/Common7/IDE/layout.css.map */

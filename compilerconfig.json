@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "Content/js/base.js",
+    "inputFile": "Content/js/base.js"
+  },
+  {
+    "outputFile": "Content/css/layout.css",
+    "inputFile": "Content/css/layout.scss"
+  }
+]

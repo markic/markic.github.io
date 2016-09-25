@@ -1,11 +1,13 @@
-﻿$(document).ready(function () {
+﻿'use strict';
+
+$(document).ready(function () {
 	var maxTabs = 3;
 	var duration = 600;
 
-	var openTab = function (index) {
+	var openTab = function openTab(index) {
 		$('.tab-content.tab-active').removeClass('tab-active').hide();
 		$('[data-content=tab' + index + ']').addClass('tab-active').fadeIn(duration);
-	}
+	};
 
 	openTab(0);
 
@@ -33,3 +35,4 @@
 		}
 	});
 });
+
