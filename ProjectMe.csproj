@@ -39,6 +39,7 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <None Include="Content\css\layout.scss" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -48,20 +49,30 @@
     <Content Include="Content\css\layout.min.css">
       <DependentUpon>layout.css</DependentUpon>
     </Content>
-    <Content Include="img\arrow-nav-left.png" />
-    <Content Include="img\arrow-nav-right.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="google18a33476007def12.html" />
     <Content Include="img\background.png" />
-    <Content Include="img\etf.png" />
+    <Content Include="img\cbc.png" />
+    <Content Include="img\collapse.png" />
+    <Content Include="img\dunav.png" />
+    <Content Include="img\elafor.png" />
+    <Content Include="img\etf.jpg" />
+    <Content Include="img\ets.png" />
+    <Content Include="img\expand.png" />
     <Content Include="img\footer.png" />
-    <Content Include="img\menu-items.png" />
+    <Content Include="img\halooglasi.png" />
+    <Content Include="img\ikea.png" />
+    <Content Include="img\klik.png" />
+    <Content Include="img\polira.png" />
     <Content Include="img\quiddita.png" />
-    <Content Include="img\skill_icon.png" />
+    <Content Include="img\smitran.png" />
     <Content Include="img\tab_footer.png" />
     <Content Include="img\tab_outline.png" />
     <Content Include="Content\js\base.js" />
     <Content Include="Content\js\base.min.js">
       <DependentUpon>base.js</DependentUpon>
     </Content>
+    <Content Include="img\universiade.png" />
     <Content Include="index.html" />
   </ItemGroup>
   <ItemGroup>
