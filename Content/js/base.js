@@ -46,15 +46,48 @@ $(document).ready(function () {
 	var projects = [
 	{
 		parent: 'Quiddita',
+		linkText: 'Parner Portal',
+		clientName: 'Dunav Osiguranje',
+		clientCountry: 'Serbia',
+		durationText: 'January 2020 - May 2020',
+		logoUrl: 'img/dunav.png',
+		tags: ['C#', '.NET CORE', 'ASP.NET WebAPI', 'MSSQL', 'NHibernate', 'Angular'],
+		paragraphs: [
+			'Data driven application used by various business partners of the largest insurance company in Serbia, Dunav Osiguranje.', 
+			'The portal has standard user management (role/permissions) system with two factor user authentication (email/SMS). Depending on the partner permissions, partner can see and search for various insurance policies and other insurance related data. ' +
+			'This was the first Quiddita project developed on the .NET CORE. During development, I have also migrated 10+ years old Quiddita Framework to the .NET CORE. ' + 
+			'Client is developed in Angular 9 using PrimeNG.'
+		],
+	},{
+		parent: 'Quiddita',
+		linkText: 'Travel Agencies Portal',
+		clientName: 'Association of Serbian Insurers',
+		clientCountry: 'Serbia',
+		durationText: 'January 2019 - July 2019',
+		logoUrl: 'img/uos.png',
+		tags: ['C#', 'ASP.NET MVC', 'ASP.NET WebAPI', 'MSSQL', 'NHibernate', 'Backbone.js', 'Angular'],
+		paragraphs: [
+			'<a href="https://www.udruzenje-osiguravaca-srbije.com" target="_blank">An online portal</a> that connects travel agencies, insurance companies, association of Serbian insurers and Ministry of Tourism employees.',
+			'All travel agencies in Serbia are required to keep evidence of travel arrangements and passengers, who are insured through the System. It is required by law that each passenger is insured from travel cancellation, agency bankrupcy or getting stranded. ' +
+			'Insurance companies are issuing policies and licences for travel agencies, while government employees check reports and control overall process. Passenger can also check insurance data on the public part of the website.',
+			'Web application is developed in Angular and ASP.NET WebAPI. I have implemented most of the back end logic and managed development of the Angular application. ' + 
+			'I have also implemented and documented API that travel agencies and insurance companies can use to fully integrate solution into their own systems.',
+		],
+	},{
+		parent: 'Quiddita',
 		linkText: 'Second Hand Furniture Portal',
 		clientName: 'IKEA',
 		clientCountry: 'Serbia',
-		durationText: 'January 2019 - present',
+		durationText: 'January 2019 - August 2019',
 		logoUrl: 'img/ikea.png',
-		tags: ['C#', 'ASP.NET MVC', 'MSSQL', 'NHibernate', 'Backbone.js'],
+		tags: ['C#', 'ASP.NET WebAPI', 'MSSQL', 'NHibernate', 'Angular'],
 		paragraphs: [
-			'Provides IKEA vouchers in exchange for donating or recycling furniture, through onlne platform. ',
-			'Under development.'
+			'Online shop that provides customers with IKEA vouchers in exchange for donating used furniture.', 
+			'Customers can donate furniture or home appliances through five step wizard and NGOs will collect, repair, recycle or dispose donated items. ' +
+			'System has a item workflow with 10+ states, scheduled SMS sending background service, website for customers and internal portal for NGOs, IKEA, Customer Service and Recycling partners.', 
+			'I have designed database model, implemented complete website for customers, worked on workflow subsystem, reports, most back end logic and automated deploy with custom powershell. ' + 
+			'System is multilingual, hence single code base is deployed as three separate systems for IKEA US, IKEA Serbia and IKEA Croatia and can be easily extended. ' +
+			'One of the most interesting and challenging tasks was working with security penetration testing company in order to fulfill all IKEA security standards.'
 		],
 	},{
 		parent: 'Quiddita',
@@ -66,8 +99,8 @@ $(document).ready(function () {
 		tags: ['C#', 'ASP.NET MVC', 'MSSQL', 'NHibernate', 'Backbone.js', 'WCF', 'Devexpress'],
 		paragraphs: [
 			'<a href="https://shop.dunav.com" target="_blank">Web shop</a> for online purchase of travel insurance. Dunav Insurance is the largest non-life insurance company in the Serbian insurance market.',
-			'I have implemented five step wizard shoping process, including card payment provider integration, multiple insurees, packages and more. ',
-			'My work also included policy holder information in Devexpress, work with WCF and WebAPI, powershell for deploy & publish, users, transactions, and other.'
+			'I have implemented five step wizard shopping process which includes credit card payment provider integration, ' +
+			'generation of reports in Devexpress, powershell for deploy and implementation of the most of the back end logic and front end pages.'
 		],
 	},{
 		parent: 'Quiddita',
@@ -76,11 +109,11 @@ $(document).ready(function () {
 		clientCountry: 'Serbia',
 		durationText: 'April - July 2018',
 		logoUrl: 'img/klik.png',
-		tags: ['C#', 'ASP.NET MVC', 'MSSQL', 'NHibernate', 'Backbone.js'],
+		tags: ['C#', 'ASP.NET MVC', 'MSSQL', 'NHibernate', 'Backbone.js', 'Angular'],
 		paragraphs: [
-			'<a href="https://klikosiguranje.rs" target="_blank">Web shop</a> for insurance comparison and brokarage agains different insurance companies. It has been developed on multilingular Quiddita CMS though which users can edit static pages, texts, menus, documents, and other content.',
-			'Brokerage is available for travel, household, life, health, casco and road insurance, where all have specific subtypes, with separate four steps wizard for every type.',
-			'I have implemented various insurance companies API integration under same interface, multiple front end pages and controls, CMS funcionalities and more.'
+			'<a href="https://klikosiguranje.rs" target="_blank">Web shop</a> for insurance comparison and brokerage against different insurance companies. Brokerage is available for travel, household, life, health, MTPL and road assitance insurance.',
+			'It has been developed in multilingual Quiddita CMS through which users can edit static pages, texts, menus, documents, and other content. ' +
+			'I have integrated various insurance companies APIs under same interface, implemented CMS functionalities, multiple website pages and back end logic.'
 		],
 	},{
 		parent: 'Quiddita',
@@ -91,21 +124,21 @@ $(document).ready(function () {
 		logoUrl: 'img/elafor.png',
 		tags: ['C#', 'ASP.NET MVC', 'MySQL', 'NHibernate', 'Backbone.js', 'Apache Solr'],
 		paragraphs: [
-			'Start-up E-Commerce connecting sellers, buyers, delivery services and individuals.' + 
-			'Platform has multiple tenants, configurable categories and products for shoping, administrators, customers, suppliers and couriers who' + 
-			'integrate through FrontEnd and BackOffice applications. Platform supports multiple payment types, vouchers, product import and export through angular BackOffice, etc.' +
-			'This is ECommerce system build on Quiddita CMS, and it is main Quiddita product.',
-			'I have worked on database and javascript optimisations, page loading speed up, multiple frontend widgets, five step wizzard ordering process, minor maintenance.' +
-			'Spent few months on CMS and E-Commerce improvement, refactorings, and decoupling, DI, migration to 4.6.1 and latest versions of all third party tools, dependency cleanup and IOC.',
-			'During 2018 we have extended E-Commerce with multi language and multi tenancy, development configuration and settings system, and launched more shops.',
-			'I have implemented full automatic application deployment (publish, webpack, backup, azure) with powershell script.',
+			'Start-up E-Commerce connecting sellers, buyers, delivery services and individuals.', 
+			'Platform has multiple tenants, customers, suppliers and couriers who are interacting ' + 
+			'through Website and BackOffice applications. Platform supports multiple payment types, vouchers, product excel import and export, categories, products, etc. ' +
+			'I have worked on database and app optimizations, page loading speed up, multiple front end widgets, five step ordering process, maintenance, '+ 
+			'refactoring and decoupling, DI and IOC introduction, migration to the latest framework, etc. ' +
+			'During 2018 we have extended E-Commerce with multi language and multi tenancy, development configuration and settings system and launched more shops.',
+			'I have implemented fully automated application deployment (publish, webpack, backup) with powershell script.',
 			'Single codebase is deployed as separate web shops, for different Tenants:' + 
 			'<ul>' +
 			'<li>School books webshop:  <a href="https://skolskeknjige.rs" target="_blank">https://skolskeknjige.rs</a></li>' +
 			'<li>New year presents webshop: <a href="https://elafor.com/paketici" target="_blank">https://elafor.com/paketici</a></li>' +
 			'<li>B2B book store: <a href="https://elafor.com" target="_blank">https://elafor.com</a></li>' +
-			'<li>Kiosk print shop: <a href="http://www.easygoing.company/projects.php" target="_blank">EasyGoing Kiosk</a></li>' +
-			'<li>Auto batteries and parts: <a href="http://www.smitrantrade.co.rs" target="_blank">Smitran Company</a></li>' +
+			'<li>Kiosk print shop: <a href="https://www.easy2u.co/" target="_blank">EasyGoing Kiosk</a></li>' +
+			'<li>Auto batteries and parts (B2B): <a href="https://smitran.rs/" target="_blank">Smitran Company</a></li>' +
+			'<li>Auto batteries and parts (B2C): <a href="https://akumulator.shop/" target="_blank">Smitran Company</a></li>' +
 			'</ul>' 
 		],
 	},{
@@ -116,13 +149,11 @@ $(document).ready(function () {
 		companyLink: 'https://www.conbear.com.au',
 		durationText: 'January - October 2017',
 		logoUrl: 'img/cbc.png',
-		tags: ['C#', 'ASP.NET MVC', 'MSSQL', 'Entity Framework', 'angular 2', 'typescript', 'TFS', 'Unity', 'Azure'],
+		tags: ['C#', 'ASP.NET MVC', 'MSSQL', 'Entity Framework', 'Angular', 'typescript', 'TFS', 'Unity', 'Azure', 'OData'],
 		paragraphs: [
-			'Multi tenant, cloud base facilities maintenance management solution, connecting tenants, contracts, sites, assets, locations, providers, work orders... ',
-			'I have developed editable email and PDF templates in HTML, through front end application. Those templates are used to generate PDF files with HTML to PDF tools.' +
-			'PDF files are zipped together with generated excel reports and emaiied to clients, using customized email templates.',
-			'I had brief expirience with Azure blob storage and Azure web jobs.',
-			'I have planned, estimated and implemented complex invoicing and accounting part of the system. Created UML model, designed database and implemented front end pages in angular.'
+			'Facilities maintenance management solution, connecting tenants, contracts, sites, assets, locations, providers and tracking work orders all over the Australia.',
+			'My duties included UML and database design, estimates, back end logic and implementation of front end pages in Angular. ' + 
+			'I have worked on excel generation, emailing, accounting and invoicing, integration of HTML to PDF tool, custom controls for editable email and PDF templates and more. Document conversion using Microsoft Graph API.'
 		],
 	},{
 		parent: 'Quiddita',
@@ -131,38 +162,51 @@ $(document).ready(function () {
 		clientCountry: 'United Kingdom',
 		durationText: 'September - December 2016',
 		logoUrl: 'img/polira.png',
-		tags: ['C#', 'ASP.NET MVC', 'MySQL', 'NHibernate', 'Backbone.js', 'require.js', 'Amazon S3'],
+		tags: ['C#', 'ASP.NET MVC', 'MySQL', 'NHibernate', 'Backbone.js', 'require.js', 'Am Charts', 'Amazon S3'],
 		paragraphs: [
-			'Polira is security awareness software which helps protect client-company employees from phishing attacks from hackers. <br />' +
-			'Portal sends simulated phishes (emails, SMS messages, WhatsApp messages) to the employees to test how they react and tracks if they read the email, clicked on the links, entered data on the simulated websites etc. <br />' +
-			'Front end application has attack simulations with statistics, employee training, outlook integration and more.',
-			'I have created authorization and authentication system, integrated few Am Charts graphs, built notifications system, worked on business logic and front end pages development, etc. <br />' +
-			'Implemented nightly task service that backups database and user files to amazon s3 service.'
+			'Polira is a security awareness software which helps protect client-company employees from phishing attacks from hackers. <br />' +
+			'Portal sends simulated phishing attacks (emails, SMS messages, WhatsApp messages) to the employees to test how they react and tracks if they performed not trusted actions. <br />' +
+			'I have created authorization and authentication system, integrated few Am Charts graphs, built notifications system and worked on business logic and front end pages development. <br />' +
+			'I have also implemented nightly task service that backups database and user files to the Amazon s3 service.'
 		],
 	},{
 		parent: 'Quiddita',
-		linkText: 'ECommerce CMS System',
+		linkText: 'ECommerce Advertising Portal',
 		clientName: 'Halo Oglasi',
 		clientCountry: 'Serbia',
 		durationText: 'July 2014 - September 2016',
 		logoUrl: 'img/halooglasi.png',
-		tags: ['C#', 'ASP.NET MVC', 'MSSQL', 'NHibernate', 'Backbone.js', 'require.js', 'handlebars.js', 'HTML', 'SASS', 'Bootstrap', 'Apache Solr', 'Redis', 'NPOI', 'LightInject', 'IIS', 'SQLProfiler', 'SEO' ],
+		tags: ['C#', 'ASP.NET MVC', 'MSSQL', 'NHibernate', 'Backbone.js', 'require.js', 'handlebars.js', 'HTML', 'SASS', 'Bootstrap', 'Apache Solr', 'Redis', 'NPOI', 'LightInject', 'IIS', 'SQLProfiler', 'SEO', 'Memcached' ],
 		paragraphs: [
-			'Complete infrastructure and legacy website (front-end portal and a back office) for one of the largest websites in Serbia. <br />' +
-			'Worked with more than 20 team members, developers, testers and designers. ',
-			'<a href="https://www.halooglasi.com" target="_blank">ECommerce is active</a> since 2015 and now it has more than 200.000 unique user visits every day.',
+			'Website and an internal back office for on of the largest advertising platforms in Serbia. Customers can advertise real estates, vehicles, services, jobs and everything else. <br />' +
+			'I have worked with more than 20 team members, engineers, QAs and designers. ',
+			'<a href="https://www.halooglasi.com" target="_blank">ECommerce is active</a> since 2015 and now has more than 200.000 unique user visits every day which made performance requirements challenging.',
 
-			'Portal is based on Quiddita CMS, which was tweaked to support advertising web sites and online shops. <br />' +
-			'The portal has support for unlimited number of categories (tree structure), each with attributes which are inherited from children to parents. <br />' +
-			'Each attribute has predefined entry/edit controls (20+ types), search controls (displayed in search sidebar, with faceting support) and overview controls (for display in list). <br/ >' +
-			'The search engine as core of solution is based on Apache Solr enterprise search server which together with implemented custom donut caching techniques provides high system performances. <br/ >' +
-			'FrontEnd supports 2 forms of online payment: with credit cards (FirstData) and SMS payments (through SMS provider) and multiple types of discounts, tokens and vouchers.',
+			'The search engine as core of solution is based on Apache Solr enterprise search server which together with implemented custom donut caching techniques provides high system performances.',
 
 			'My work included: card payment integration, multiple CMS extensions, Apache Solr relevancy scoring and HTML rendering, many BackOffice / Front End controls and pages, XML ad import, Excel ad import via NPOI, PlanPlus and Google maps integration, ' + 
-			'SignalR integration, SEO improvments, sitemap generator, razor email sending system, redis cache integration, page load speed ups, SQL and LINQ performance improvments. <br /> ' +  
-			'Collaborated on: task scheduler, galeries, menus, messaging, local storage, memcached, redis, kuglof cache, handlebars.net, <br />' + 
-			'My duties: database design and performance improvement, front end and back end development, minimal CSS, unit testing, server log parsing, code refactor and speed up, manual testing, application deploy, maintenance, debugging, bug fixing and more.'
+			'SignalR integration, SEO, sitemap generator, razor email sending system, redis cache integration, page load speed-ups, SQL and LINQ performance improvments. <br /> ' +  
+			'My duties: front end and back end development, database design and performance improvements, design, unit testing, server log parsing, code refactoring and speed up, manual testing, application deploy, maintenance, debugging, bug fixing and more.'
 		],
+	},{
+		parent: 'Other',
+		linkText: 'Business Generator',
+		linkURL: 'https://biznisgenerator.rs/',
+		durationText: 'December 2019',
+		paragraphs: [
+			'Commercial website that uses math based algorithms to calculate and propose the most predictable business startup for the customers.' +
+			'Customer answers multiple questions and can request business plan, accounting service, website design and other business related inquiries. Single page website is ' + 
+			'<a href="https://biznisgenerator.rs/" target="_blank">available online.</a>'],
+		tags: ['.NET', 'C#', 'Entity Framework', 'bootstrap'],
+	},{
+		parent: 'Other',
+		linkText: 'Oziris Electric',
+		linkURL: 'http://oziriselektrika.com/',
+		durationText: 'October 2018',
+		paragraphs: [
+			'Commercial website for oziris company that provides electric and air conditioning services. Single page website is ' + 
+			'<a href="http://oziriselektrika.com" target="_blank">available online.</a>'],
+		tags: ['PHP', 'js'],
 	},{
 		parent: 'Personal',
 		linkText: 'Survival Island',
@@ -181,23 +225,6 @@ $(document).ready(function () {
 			'Classic 2D arcade game, developed in XNA 4.0 Game studio (C#). '
 		],
 		tags: ['C#', 'XNA'],
-	},{
-		parent: 'Other',
-		linkText: 'Oziris Electric',
-		linkURL: 'http://oziriselektrika.com/',
-		durationText: 'October 2018',
-		paragraphs: [
-			'Commercial website for oziris company that provides electric and air conditioning services. Single page website is ' + 
-			'<a href="http://oziriselektrika.com" target="_blank">available online.</a>'],
-		tags: ['PHP', 'js'],
-	},{
-		parent: 'Other',
-		linkText: 'jQuery Course',
-		linkURL: 'https://code.tutsplus.com/courses/30-days-to-learn-jquery',
-		durationText: 'April 2012',
-		paragraphs: [
-			'jQuery course by Jeffrey Way, on tutsplus. '],
-		tags: ['jQuery'],
 	}];
 
 	document.getElementById('')

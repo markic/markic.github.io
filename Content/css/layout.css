@@ -39,6 +39,8 @@
 
 .card {
   padding: 0px 18px; }
+  .card p {
+    font-size: 13px; }
 
 body {
   background-image: url("../../img/background.png");
@@ -148,4 +150,3 @@ body {
     display: block; }
   body header .info-list {
     padding-top: 50px; } }
-
