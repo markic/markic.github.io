@@ -46,10 +46,10 @@ $(document).ready(function () {
 	var projects = [
 	{
 		parent: 'Quiddita',
-		linkText: 'Parner Portal',
+		linkText: 'Internal Sales Portal',
 		clientName: 'Dunav Osiguranje',
 		clientCountry: 'Serbia',
-		durationText: 'January 2020 - May 2020',
+		durationText: 'January 2020 - In Progress',
 		logoUrl: 'img/dunav.png',
 		tags: ['C#', '.NET CORE', 'ASP.NET WebAPI', 'MSSQL', 'NHibernate', 'Angular'],
 		paragraphs: [
@@ -58,7 +58,20 @@ $(document).ready(function () {
 			'This was the first Quiddita project developed on the .NET CORE. During development, I have also migrated 10+ years old Quiddita Framework to the .NET CORE. ' + 
 			'Client is developed in Angular 9 using PrimeNG.'
 		],
-	},{
+		},{
+			parent: 'Quiddita',
+			linkText: 'Travel Insurance Web Shop',
+			clientName: 'Dunav Osiguranje',
+			clientCountry: 'Serbia',
+			durationText: 'July 2018 - In Progress',
+			logoUrl: 'img/dunav.png',
+			tags: ['C#', 'ASP.NET WebAPI', 'MSSQL', 'NHibernate', 'Angular', 'WCF', 'Devexpress'],
+			paragraphs: [
+				'<a href="https://portal.dunav.com" target="_blank">Web shop</a> for online purchase of travel insurance, roadside assistance, hull collision vehicle insurance and more. Dunav Insurance is the largest non-life insurance company in the Serbian insurance market.',
+				'I have implemented five step wizard shopping process which includes credit card payment provider integration, and various other API integrations ' +
+				'generation of reports in Devexpress, powershell for deploy and implementation of the most of the back end logic and front end pages.'
+			],
+		}, {
 		parent: 'Quiddita',
 		linkText: 'Travel Agencies Portal',
 		clientName: 'Association of Serbian Insurers',
@@ -88,19 +101,6 @@ $(document).ready(function () {
 			'I have designed database model, implemented complete website for customers, worked on workflow subsystem, reports, most back end logic and automated deploy with custom powershell. ' + 
 			'System is multilingual, hence single code base is deployed as three separate systems for IKEA US, IKEA Serbia and IKEA Croatia and can be easily extended. ' +
 			'One of the most interesting and challenging tasks was working with security penetration testing company in order to fulfill all IKEA security standards.'
-		],
-	},{
-		parent: 'Quiddita',
-		linkText: 'Travel Insurance Web Shop',
-		clientName: 'Dunav Osiguranje',
-		clientCountry: 'Serbia',
-		durationText: 'July - December 2018',
-		logoUrl: 'img/dunav.png',
-		tags: ['C#', 'ASP.NET MVC', 'MSSQL', 'NHibernate', 'Backbone.js', 'WCF', 'Devexpress'],
-		paragraphs: [
-			'<a href="https://shop.dunav.com" target="_blank">Web shop</a> for online purchase of travel insurance. Dunav Insurance is the largest non-life insurance company in the Serbian insurance market.',
-			'I have implemented five step wizard shopping process which includes credit card payment provider integration, ' +
-			'generation of reports in Devexpress, powershell for deploy and implementation of the most of the back end logic and front end pages.'
 		],
 	},{
 		parent: 'Quiddita',
