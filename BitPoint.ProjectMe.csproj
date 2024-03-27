@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Content\js\base.js" />
+    <None Remove="Content\js\base.min.js" />
+    <None Remove="favicon.ico" />
+    <None Remove="google18a33476007def12.html" />
+    <None Remove="img\background.png" />
+    <None Remove="img\cbc.png" />
+    <None Remove="img\dunav.png" />
+    <None Remove="img\etf.jpg" />
+    <None Remove="img\ets.png" />
+    <None Remove="img\footer.png" />
+    <None Remove="img\halooglasi.png" />
+    <None Remove="img\ikea.png" />
+    <None Remove="img\polira.png" />
+    <None Remove="img\quiddita.png" />
+    <None Remove="img\tab_footer.png" />
+    <None Remove="img\tab_outline.png" />
+    <None Remove="img\universiade.png" />
+    <None Remove="index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Content\js\base.js" />
+    <Content Include="Content\js\base.min.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="google18a33476007def12.html" />
+    <Content Include="img\background.png" />
+    <Content Include="img\cbc.png" />
+    <Content Include="img\dunav.png" />
+    <Content Include="img\etf.jpg" />
+    <Content Include="img\ets.png" />
+    <Content Include="img\footer.png" />
+    <Content Include="img\halooglasi.png" />
+    <Content Include="img\ikea.png" />
+    <Content Include="img\polira.png" />
+    <Content Include="img\quiddita.png" />
+    <Content Include="img\universiade.png" />
+    <Content Include="index.html" />
+  </ItemGroup>
+
+</Project>

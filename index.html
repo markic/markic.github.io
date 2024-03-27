@@ -23,18 +23,233 @@
 		<!--styles section-->
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-		<link href="Content/css/layout.css" rel="stylesheet">
-		<!-- PROD <style>
-			@media(max-width:1000px)
-		</style>--> 
+		<style type="text/css">
+			.full-img {
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				z-index: -1;
+				background-position: center;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+
+			.full-img .overlay {
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				opacity: .8;
+				background: #1C1D21;
+			}
+
+			.expand-image {
+				position: absolute;
+				top: 0;
+				right: 10px;
+				width: 50px;
+				transform: rotate(180deg);
+			}
+
+			.project-info img.logo-img {
+				width: 100%;
+			}
+
+			.project-info h4 {
+				padding: 20px 15px;
+				margin: 0px;
+				cursor: pointer;
+			}
+
+			.project-info h4.collapsed .expand-image {
+				transform: none;
+			}
+
+			.card {
+				padding: 0px 18px;
+			}
+
+			.card p {
+				font-size: 13px;
+			}
+
+			body {
+				background-image: url("img/background.png");
+				background-position: 0 0;
+				background-repeat: no-repeat;
+				color: #9F9F9F;
+				background-color: #252525;
+				font-family: "Open Sans", Arial;
+				font-size: 12px;
+				background-repeat: repeat-x;
+			}
+
+			body header {
+				margin-top: 35px;
+				font-family: "Open Sans", Arial;
+				margin-bottom: 30px;
+			}
+
+			body header h1 {
+				font-size: 62px;
+				font-weight: 300;
+				margin-bottom: 10px;
+				letter-spacing: -2px;
+				color: #E0E0E0;
+			}
+
+			body header p {
+				margin: 0px;
+				padding: 0px;
+				margin-top: 10px;
+				font-size: 15px;
+				font-weight: normal;
+				margin-bottom: 10px;
+			}
+
+			body header .info-list {
+				padding-top: 100px;
+				font-size: 14px;
+			}
+
+			body header .info-list ul {
+				display: inline;
+				list-style: none;
+				padding-left: 0px;
+			}
+
+			body header .info-list ul li {
+				display: inline;
+				padding-right: 20px;
+			}
+
+			body header .info-list ul li i {
+				padding-right: 5px;
+			}
+
+			body nav {
+				position: relative;
+				padding-bottom: 20px;
+			}
+
+			body h2 {
+				color: white;
+				font-size: 25px;
+			}
+
+			body h3 {
+				color: white;
+			}
+
+			body .bar {
+				height: 3px;
+			}
+
+			body .bar.green {
+				background-color: #343434;
+			}
+
+			body h4 a {
+				color: #53B123;
+			}
+
+			body h4 span {
+				margin-top: 5px;
+				display: block;
+				font-size: 13px;
+				color: white;
+			}
+
+			body .tags {
+				margin-bottom: 5px;
+				padding-bottom: 5px;
+				border-bottom: solid 1px #343434;
+			}
+
+			body .tags span {
+				padding: 4px;
+				margin-bottom: 5px;
+				border-radius: 9px;
+				margin-right: 5px;
+				background-color: #53B123;
+				color: white;
+				display: inline-block;
+			}
+
+			body footer {
+				margin-top: 15px;
+				border-top: solid 1px #1A1A1A;
+				background-image: url("img/footer.png");
+				background-position: top center;
+				background-repeat: no-repeat;
+			}
+
+			body footer hr {
+				height: 1px;
+				margin: 0px;
+				padding: 0px;
+				border: none;
+				color: #353535;
+				background-color: #353535;
+			}
+
+			body footer .social {
+				margin-top: 25px;
+			}
+
+			.significant li{
+				font-size:13px;
+			}
+
+			a {
+				color: #53B123;
+			}
+
+			@media (max-width: 991px) {
+				body header .info-list {
+					padding-top: 0px;
+				}
+			}
+
+			@media (max-width: 767px) {
+				.expand-image {
+					top: -50px;
+					width: 30px !important;
+				}
+
+				.project-info img.logo-img {
+					width: 25%;
+					display: block;
+					margin: 0 auto;
+					margin-bottom: 20px;
+				}
+
+				.project-info {
+					text-align: center;
+				}
+
+				.project-info ul {
+					list-style: none;
+				}
+			}
+
+			@media (max-width: 515px) {
+				body header .info-list ul li {
+					display: block;
+				}
+
+				body header .info-list {
+					padding-top: 50px;
+				}
+			}
+
+		</style>
 
 		<!--scripts section--> 
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<script src="Content/js/base.js"></script>
-		<!-- PROD: <script type="text/javascript">
-			"use strict"; 
-		</script>-->
 	</head>
 
 	<body>
@@ -43,20 +258,31 @@
 				<div class="col-md-5 col-xs-12">
 					<h1>Marin Markić</h1>
 					<p>software engineer & computer scientist</p>
-				</div>
-				<div class="col-md-7 col-xs-12">
-					<div class="info-list">
-						<ul>
-							<li><i class="fa fa-envelope"></i> <a href="https://www.linkedin.com/in/markicmarin/">Reach Me</a></li>
-						</ul>
-					</div>
+					<p><i class="fa fa-envelope"></i> <a href="https://www.linkedin.com/in/markicmarin/" target="_blank">available per hour (short term)</a></p>
 				</div>
 			</header>
 
-
 			<div class="row">
+				<div class="col-md-12"><h2>Significant</h2></div>
+				<div class="col-md-9">
+					<div class="row border-info significant" style="margin-top: 20px;">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<ul>
+								<li>Project lead and full-stack engineer with over <span id="computedpf">(X years+)</span> of professional experience. </li>
+								<li>Specializing in big data web based systems handling millions of records and user requests.</li>
+								<li>Holder of a Master's degree in Computer Science and Electrical Engineering.</li>
+								<li>Experienced in various roles including architect, team lead, business analyst, consultant, DevOps specialist and database designer. </li>
+								<li>Proficient in both frontend and backend development.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row" style="margin-top: 20px;">
+				<div class="bar green"></div>
 				<div class="col-md-12"><h2>Experience and Education</h2></div>
-				<div class="col-md-6">
+				<div class="col-md-7">
 					<div class="row border-info">
 						<div class="col-md-2 col-sm-2 col-xs-2">
 							<img src="img/quiddita.png" width="100%" style="margin-top:4px;">
@@ -64,17 +290,16 @@
 						<div class="col-md-10 col-sm-10 col-xs-10">
 							<h4>
 								<a href="javascript:void(0);">Full-Stack Software Engineer</a> <br>
-								<span id="computedpf">July 2014 - present (X years+)</span>
+								<span id="computedpf2">2014 - Present (X years+)</span>
 							</h4>
 							<p>
-								Project lead and a full time SDE at <a href="https://quiddita.rs/" target="_blank">Quiddita Company</a>.
+								Project lead and full-time Software Development Engineer at <a href="https://quiddita.rs/" target="_blank">Quiddita Company</a>.
 							</p>
 							<ul style="margin-top: 10px; font-size: 13px;">
-								<li>Fluent in Microsoft backend stack, C#, .NET Framework/Core, ASP. NET WebAPI, NHibernate ORM, UML.</li>
-								<li>Very strong with JavaScript / TypeScript, Angular, MSSQL.</li>
-								<li>Working knowledge of Solr, Redis, DevExpress, Entity Framework, CSS, Power shell, Bootstrap, Flex, My SQL</li>
-								<li>Task/Team management, estimates, organization, business analytics, client meetings, interviews, deployment. </li>
-								<li>Clashed with SEO, Unity, Backbone.js, handlebars.js and NET, Azure, SigalrR, PHP, JPA, XNA, Unity 3D...</li>
+								<li>Proficient in the Microsoft backend stack, including C#, .NET Framework/Core, ASP.NET WebAPI and NHibernate ORM.</li>
+								<li>Skilled in JavaScript/TypeScript, Angular, and MSSQL.</li>
+								<li>My responsibilities encompass UML and database design, task and team management, project estimation, business analytics, client meetings, interviews, backend and frontend development, server administration, DevOps, system monitoring and maintenance, performance optimization and security enhancement.</li>
+								<li>I also possess working knowledge of Solr, Redis, DevExpress, Entity Framework, CSS, PowerShell, Bootstrap, MySQL, Query Store, SQL Profilers, IIS and SSL.</li>
 							</ul>
 						</div>
 					</div>
@@ -84,28 +309,28 @@
 						</div>
 						<div class="col-md-10 col-sm-10 col-xs-10">
 							<h4>
-								<a href="javascript:void(0);">Volunteer on Belgrade Universiade</a> <br>
-								<span>June - July 2009</span>
+								<a href="javascript:void(0);">Volunteer at the Belgrade Universiade</a> <br>
+								<span>2009</span>
 							</h4>
 							<p>
-								IT volunteer on FK Obilić Stadium during Belgrade Universiade.
+								Served as an IT volunteer at the FK Obilić Stadium during the Belgrade Universiade.
 							</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-5">
 					<div class="row border-info">
 						<div class="col-md-2 col-sm-2 col-xs-2">
 							<img src="img/etf.jpg" width="100%" style="margin-top:12px;">
 						</div>
 						<div class="col-md-10 col-sm-10 col-xs-10">
 							<h4>
-								<a href="javascript:void(0);">Master's degree at School of Electrical Engineering</a> <br>
+								<a href="javascript:void(0);">Master's Degree</a> <br>
 								<span>2014 - 2016</span>
 							</h4>
 							<p>
-								Department of Computer Science and Information Technology, University of Belgrade.
-								<a href="https://www.etf.bg.ac.rs/en/studies/master-studies" target="_blank">See more.</a> 
+								School of Electrical Engineering, University of Belgrade, Department of Computer Science and Information Technology
+								<a href="https://www.etf.bg.ac.rs/en/studies/master-studies" target="_blank">See more.</a>
 							</p>
 						</div>
 					</div>
@@ -115,12 +340,12 @@
 						</div>
 						<div class="col-md-10 col-sm-10 col-xs-10">
 							<h4>
-								<a href="javascript:void(0);">Bachelors's degree at School of Electrical Engineering</a> <br>
+								<a href="javascript:void(0);">Bachelor's Degree</a> <br>
 								<span>2009 - 2014</span>
 							</h4>
 							<p>
-								Department of Computer Science and Information Technology, University of Belgrade.
-								<a href="https://www.etf.bg.ac.rs/en/studies/bachelor-studies/electrical-and-computer-engineering" target="_blank">See more.</a> 
+								School of Electrical Engineering, University of Belgrade, Department of Computer Science and Information Technology
+								<a href="https://www.etf.bg.ac.rs/en/studies/bachelor-studies/electrical-and-computer-engineering" target="_blank">See more.</a>
 							</p>
 						</div>
 					</div>
@@ -130,49 +355,61 @@
 						</div>
 						<div class="col-md-10 col-sm-10 col-xs-10">
 							<h4>
-								<a href="javascript:void(0);">Computer Technician at Secondary Electrical School</a>
+								<a href="javascript:void(0);">Computer Technician</a>
 								<span>2005 - 2009</span>
 							</h4>
 							<p>
-								Belgrade high school student and member at center for talented youth. 
+								Secondary Electrical School student at Belgrade High School and member of the Center for Talented Youth.
 							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="row" style="margin-top: 30px;">
+			<div class="row" style="margin-top: 20px;">
 				<div class="bar green"></div>
-				<div class="col-md-12"><h2>Projects at Quiddita</h2></div>
-				<template id="quiddita-template">
-					<div class="project-info border-info">
-						<h4 class="collapsed" data-toggle="collapse" data-target="#collapse{i}">
-							<div class="row">
-								<div class="col-md-2 col-sm-2 col-xs-12">
-									<img src="{logoUrl}" class="logo-img" />
-								</div>
-								<div class="col-md-10 col-sm-10 col-xs-12">
-									<a href="javascript:void(0);">{linkText} ({clientName}, {clientCountry})</a> <br />
-									<span>{durationText}</span>
-									<img src="img/expand.png" class="expand-image" />
-								</div>
+				<div class="col-md-10">
+					<h2>Personal</h2>
+					<ul>
+						<li>Born in Belgrade in 1990.</li>
+						<li>I love coffee, sun, hike, travel, driving, drawing, reading, movies, TV shows, PC games, summer and water sports, hiking, nature, history, all kinds of music. </li>
+						<li id="mostImpId"><a href="#" id="mostImpLink">Most important of all?</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<template id="quiddita-template">
+				<div class="project-info border-info">
+					<h4>
+						<div class="row">
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<img src="{logoUrl}" class="logo-img" />
 							</div>
-						</h4>
-						<div class="collapse" id="collapse{i}">
-						  <div class="card card-body">
-						  	{paragraphs}
-							<div class="tags">
-								{tags}
+							<div class="col-md-8 col-sm-8 col-xs-12">
+								<a href="javascript:void(0);">{linkText}</a> <br />
+								<span>{durationText}, {clientCountry} </span>
 							</div>
-						  </div>
+						</div>
+					</h4>
+					<div class="card card-body">
+						{paragraphs}
+						<div class="tags">
+							{tags}
 						</div>
 					</div>
-				</template>
-				<div id="quiddita-placeholder" class="col-md-12"></div>
-			</div>
-			<div class="row" style="margin-top: 30px;">
+				</div>
+			</template>
+
+			<div class="row" style="margin-top: 20px;">
 				<div class="bar green"></div>
-				<div class="col-md-12"><h2>Some Personal Projects</h2></div>
+				<div class="col-md-12"><h2>Main Projects</h2></div>
+				<div id="quiddita-placeholder1" class="col-md-6"></div>
+				<div id="quiddita-placeholder2" class="col-md-6"></div>
+			</div>
+
+			<div class="row" style="margin-top: 20px;">
+				<div class="bar green"></div>
+				<div class="col-md-12"><h2>Some Personal Work</h2></div>
 				<template id="personal-template">
 					<div>
 						<h4>
@@ -190,110 +427,82 @@
 				<div class="col-md-6 col-sm-6">
 					<div id="personal-placeholder"></div>
 				</div>
-			</div>
-			<div class="row" style="margin-top: 30px;">
 				<div class="bar green"></div>
-				<div class="col-md-12"><h2>University Projects</h2></div>
 				<div class="col-md-6 col-sm-6">
 					<div>
-						<h4><a href="https://github.com/markic/Qarth" target="_blank">Real estate reservations demo</a> <span>June 2016</span></h4>
+						<h4><a href="https://github.com/markic/Qarth" target="_blank">Real estate reservations demo</a> <span>2016</span></h4>
 						<p>
-							Real estate apartment reservation application demo, developed using JPA/JPAQ.
+							Real estate apartment reservation demo. Developed in MySQL, JPA, JPAQ.
 						</p>
 						<div class="tags">
 							<span>GIT</span><span>UML</span><span>MySQL</span><span>java</span>
 						</div>
 					</div>
 					<div>
-						<h4><a href="https://github.com/markic/DMS" target="_blank">DMS</a> <span>November 2014 - January 2015</span></h4>
+						<h4><a href="https://github.com/markic/DMS" target="_blank">DMS</a> <span>2015</span></h4>
 						<p>
-							Documents management system, developed in .NET Windows Forms, using entity framework.
+							Document management system developed in .NET Windows Forms and entity framework.
 						</p>
 						<div class="tags">
-							<span>C#</span><span>UML</span><span>GIT</span>
+							<span>C#</span><span>UML</span><span>GIT</span><span>.NET WinForms</span><span>Entity Framework</span>
 						</div>
 					</div>
 					<div>
-						<h4><a href="http://markic.github.io/#" target="_blank">VLSI Processor</a> <span>February - June 2014</span></h4>
+						<h4><a href="http://markic.github.io/#" target="_blank">ARM Processor Design</a> <span>2014</span></h4>
 						<p>
-							Project for the course "VLSI computer systems" during my studies.
-							Complete design and implementation of ARM RISC SoC processor in synthesizable VHDL. 
-							Processor has single core with pipeline stages and with instruction cache and data cache. 
+							Complete design and implementation of ARM RISC SoC processor in synthesizable VHDL.
+							Processor has single core with pipeline, instruction cache and data cache.
 						</p>
 						<div class="tags">
 							<span>Altera Quartus</span><span>ModelSim</span><span>VHDL</span>
 						</div>
 					</div>
 					<div>
-						<h4><a href="https://github.com/markic/microjava-compiler" target="_blank">Micro Java Compiler</a> <span>October - December 2013</span></h4>
+						<h4><a href="https://github.com/markic/microjava-compiler" target="_blank">Micro Java Compiler</a> <span>2013</span></h4>
 						<p>
-							Project for the course ”Compilers” during my studies. Compiler for made up Micro Java programing language (light Java version). 
-							Compiler performs lexical, syntax and semantic analysis and generates executable. End result is executable program on the Micro Java virtual machine. 
+							Compiler for made up Micro Java programing language (light Java version).
+							Compiler performs lexical, syntax and semantic analysis and generates executable file that is executed on the Micro Java virtual machine.
 						</p>
 						<div class="tags">
 							<span>Java</span><span>Regex</span>
 						</div>
 					</div>
 					<div>
-						<h4><a href="https://github.com/markic/linker-and-loader" target="_blank">Linker and Loader</a> <span>April - June 2013</span></h4>
+						<h4><a href="https://github.com/markic/linker-and-loader" target="_blank">Linker and Loader</a> <span>2013</span></h4>
 						<p>
-							Project for the course ”System Programming” during my studies.
-							Linker and loader for binary files in ELF problam, that are repsesenting a program.
-							Application links program with other libraries, performs necessary adjustments, loads program to the operating memory and executes program code from entry point. 
-							Project was developed for ARM architecture using qemu cross-compilation emulator on linux. 
+							Linker and loader for binary files in ELF format.
+							Main feature is link of program with third party libraries, loads program to the operating memory and executes program code from the entry point.
+							Project was developed for ARM architecture using qemu cross-compilation emulator on linux.
 						</p>
 						<div class="tags">
 							<span>C</span><span>ARM assembly</span><span>Ubuntu</span>
 						</div>
 					</div>
-					<div>
-						<h4><a href="https://github.com/markic/multithreading-kernel" target="_blank">Multithreading OS Kernel</a> <span>April - September 2012</span></h4>
-						<p>
-							Project for the course ”Operating systems 1” during my studies.
-							Implementation of the multithreading kernel with time sharing, thread scheduling, semaphores and interrupt triggered events. 
-						</p>
-						<div class="tags">
-							<span>C++</span><span>8086</span>
-						</div>
-					</div>
 				</div>
 				<div class="col-md-6 col-sm-6">
 					<div>
-						<h4><a href="https://github.com/yellboy/SchoolPortal" target="_blank">High School Portal</a> <span>March - June 2015</span></h4>
+						<h4><a href="https://github.com/yellboy/SchoolPortal" target="_blank">High School Portal</a> <span>2015</span></h4>
 						<p>
-							School website for the Fifth Belgrade Gymnasium, developed in CodeIgniter PHP framework. Website has menus, categories, articles and user management with standard authentication. Menus, categories, articles and other content is managed thorugh custom made CMS. (Used plugins like jsTree and ckeditor).
+							School website for the Fifth Belgrade Gymnasium, developed in CodeIgniter PHP framework, with custom made CMS that integrated jsTree and ckeditor.
 						</p>
 						<div class="tags">
 							<span>GIT</span><span>UML</span><span>PHP</span><span>MySQL</span><span>javascript</span>
 						</div>
 					</div>
 					<div>
-						<h4><a href="http://markic.github.io/#" target="_blank">Final Thesis</a> <span>July - October 2014</span></h4>
+						<h4><a href="http://markic.github.io/#" target="_blank">Bachelor's' Thesis</a> <span>2014</span></h4>
 						<p>
-							Final thesis project for my bachelor's degree.
-							Web system that solves problems of data interoperability and data transfer between different systems.
-							Data can be transferred in XML and MS Excel. Developed import and export web application with appropriate services.
+							Web app that demonstrates data transfer between different systems, via XML and MS Excel formats.
 						</p>
 						<div class="tags">
 							<span>ASP.NET MVC</span><span>javascript</span><span>backbone</span><span>C#</span><span>MSSQL</span><span>NHibernate</span>
 						</div>
 					</div>
 					<div>
-						<h4><a href="https://github.com/markic/checkers-players" target="_blank">Checkers Game</a> <span>May - June 2014</span></h4>
+						<h4><a href="javascript:void(0)" target="_blank">Stopwatch</a> <span>2013</span></h4>
 						<p>
-							Project for the course "Expert Systems" during my studies.  
-							Checkers board game with two AI players, one using minimax with alpha beta pruning and custom made one. 
-						</p>
-						<div class="tags">
-							<span>Java</span>
-						</div>
-					</div>
-					<div>
-						<h4><a href="javascript:void(0)" target="_blank">Stopwatch</a> <span>October - November 2013</span></h4>
-						<p>
-							Project for the course ”Microprocessors” during my studies. 
-							Task of making timer directly on hardware was implemented using microprocessor (8086), interrupt controller (8259), timer (8253) and LCD. 
-							Software was written in C/asm and stored in 8086 ROM on chip.
+							Implemented stopwatch using microprocessor (8086), interrupt controller (8259), timer (8253) and LCD.
+							Software was written in C and assembly and stored in 8086 ROM chip.
 						</p>
 						<div class="tags">
 							<span>C</span><span>assembly</span>
@@ -301,31 +510,28 @@
 					</div>
 					<div>
 						<h4>
-							<a href="https://github.com/markic/school-file-system" target="_blank">File system</a> <span>September - December 2012</span>
+							<a href="https://github.com/markic/school-file-system" target="_blank">File system</a> <span>2012</span>
 						</h4>
 						<p>
-							Project for the course ”Operating systems 2” during my studies.
-							File system with indexed allocation and banker's algorithm for resource allocation and deadlock avoidance.		
+							File system with indexed allocation and banker's algorithm for resource allocation and deadlock avoidance.
 						</p>
 						<div class="tags">
 							<span>C++</span><span>Win 32 API</span>
 						</div>
 					</div>
+					<div>
+						<h4><a href="https://github.com/markic/multithreading-kernel" target="_blank">Multithreading OS Kernel</a> <span>2012</span></h4>
+						<p>
+							Implementation of the multithreading kernel demo. Kernel supports time sharing threads, thread scheduling, mutex/semaphores and interrupt triggered events.
+						</p>
+						<div class="tags">
+							<span>C++</span><span>assembly</span>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="row" style="margin-top: 30px;">
-				<div class="bar green"></div>
-				<div class="col-md-8">
-					<h2>Personal</h2>
-					<ul>
-						<li>Born in Belgrade, Serbia</li>
-						<li <a href="">Guess what is most important in my life</li>
-						<li>Coffee, sun, hike, outside, travel, driving, drawing, reading, movies, TV shows, PC games, new technologies, fantasy, water sports, history, music</li>
-					</ul>
-				</div>
-			</div>
-		</div>
 
+		</div>
 		<footer id="footer">
 			<hr />
 			<div class="container">
